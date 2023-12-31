@@ -26,7 +26,3 @@ To use the calculator, follow these steps:
 ## Contributing
 
 Contributions to enhance the functionality or design of this calculator are welcome. Please feel free to fork the repository, make your changes, and submit a pull request.
-
-## License
-
-This project is open-source and available under the MIT License.
