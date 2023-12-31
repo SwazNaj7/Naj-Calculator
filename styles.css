@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Digital-7';
+    src: url(/fonts/digital-7/digital-7.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(138, 190, 190);
+}
+
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgb(19, 51, 61);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgba(255,255,255, 0.05);
+}
+
+#display {
+    margin-bottom: 10px;
+    padding: 50px;
+    text-align: right;
+    margin-top: 20px;
+    border: 2px solid black;
+    font-size: 5em;
+    font-family: 'Digital-7';
+    background-color: rgb(61, 97, 60);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: rgb(202, 202, 202);
+}
+
+#btn-grid {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+#btn-grid > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: 20px;
+    cursor: pointer;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#btn-equals {
+    width: 100%;
+    grid-column: 4/ span 1;
+}
+
+#btn-dot {
+    width: 100%;
+    grid-column: span 2;
+}
+
+.operation {
+    background-color: orange;
+}
+
+button:hover {
+    background-color: rgba(163, 163, 163, 0.5);
+    transition: 0.2s ease;
+}
+
+button:active { 
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24); 
+    transform: translateY(4px); 
+} 
